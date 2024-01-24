@@ -48,8 +48,6 @@ def send_notification(api_key, title, message):
         return {"error": f"Failed to send notification. {str(e)}"}
 
 
-my_password = "test123"
-
 # Example usage:
 api_key = "your_api_key"
 notification_title = "New Message"
