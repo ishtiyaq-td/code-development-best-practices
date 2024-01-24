@@ -50,4 +50,5 @@ disable=anomalous-backslash-in-string,
         inconsistent-return-statements,
         undefined-variable,
         undefined-variable,
-        consider-using-with
+        consider-using-with,
+        logging-fstring-interpolation
