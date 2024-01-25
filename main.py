@@ -1,7 +1,10 @@
 import os
 import logging
 import requests
+from dotenv import load_dotenv, find_dotenv
 
+
+load_dotenv(find_dotenv())
 
 # Create 'logs' folder if it doesn't exist
 if not os.path.exists("logs"):
@@ -48,8 +51,8 @@ def send_notification(api_key, title, message):
         return {"error": f"Failed to send notification. {str(e)}"}
 
 
-# Example usage:
-api_key = "your_api_key"
+api_key = os.getenv("API_KEY")
+
 notification_title = "New Message"
 notification_message = "You have a new message. Click to read."
 
